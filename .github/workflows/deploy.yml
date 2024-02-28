@@ -12,6 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Debug Information
+        run: |
+          ls -la
+          pwd
+          ls -la build
+
       - name: Install dependencies
         run: npm install
 
